@@ -98,7 +98,7 @@ app.get( '/api/rate', ( req, res ) =>{
                 .send({
                     ...req.query,
                     conversionRate,
-                    destinationAmount: ( req.query.originAmount * conversionRate )
+                    destinationAmount: ( req.query.originAmount * conversionRate ).toFixed( 2 )
                 })
 });
 
