@@ -86,7 +86,6 @@ class Conversion extends Component {
     }
 
     render(){ 
-        console.log( this.props.errorMsg );
         if( this.props.errorMsg ){
             var errorMsg    = <div className="errorMsg"> { this.props.errorMsg } </div>
         }

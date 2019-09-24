@@ -17,7 +17,9 @@ function error( state  =   defaultState, action ){
         case types.RECIVED_RATE_FAILURE :
             return {    ...state,   errorMsg    :   action.data.errorMsg    };
         
-        case types.RECIVED_CONVERSION_RATE_SUCCESS, types.RECIVED_FEES_SUCCESS, types.RECIVED_RATE_SUCCESS  :
+        case types.RECIVED_CONVERSION_RATE_SUCCESS :
+        case types.RECIVED_FEES_SUCCESS :
+        case types.RECIVED_RATE_SUCCESS :
             return {    ...state,   errorMsg    :   ''    };
             
         default:
