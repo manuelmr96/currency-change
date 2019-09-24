@@ -1,6 +1,6 @@
 ## Currency change
 
-In the project, you have  three differents Currencies and you are able to convert between those.
+In the project, you have  three differents Currencies and you are able to convert between each of them.
 
 You will only need to:
 
