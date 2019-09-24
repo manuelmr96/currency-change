@@ -7,18 +7,20 @@ class FeesTable extends Component {
         var { conversionRate, fee, total, originCurrency, destinationCurrency } = this.props;
         return(
             <div>
-                <table>
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" >Conversion Rate</th>
+                            <th scope="col" >1 { originCurrency } -> { conversionRate.toFixed( 2 ) } { destinationCurrency } </th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
-                            <td>Conversion Rate</td>
-                            <td>1 { originCurrency } -> { conversionRate.toFixed( 2 ) } { destinationCurrency } </td>
-                        </tr>
-                        <tr>
-                            <td> Fee </td>
+                            <th> Fee </th>
                             <td> { fee.toFixed( 2 ) } { originCurrency } </td>
                         </tr>
                         <tr>
-                            <td className="total-lable"> Total Cost </td>
+                            <th className="total-lable"> Total Cost </th>
                             <td> { total.toFixed( 2 ) } { originCurrency } </td>
                         </tr>
                     </tbody>

@@ -6,7 +6,6 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #78a12e; 
-    color: #FFFFFF;
 }
 
 .height-90{
@@ -29,4 +28,8 @@ body{
     border-radius: 15px;
     margin: 15px 0;
     text-align: center;
+}
+
+select{
+    margin-left: 5px;
 }
